@@ -3,11 +3,8 @@ var fs = require('fs'),
     system = require('system'), page=require('webpage');
 var rtn = '';
 if (system.args.length > 1 ) {
-    console.log("Usage: echoToFile.js DESTINATION_FILE <arguments to echo...>");
-    
+    console.log(''+btoa(system.args[1]));
 } 
-    
     console.log(''+rtn);
     phantom.exit();
-    
 }
